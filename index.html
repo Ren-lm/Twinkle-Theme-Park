@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twinkle Park</title>
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="assets/css/twinklepstyles.css" />
+    <!-- gallery slider stylesheet -->
+    <link rel="stylesheet" href="assets/css/gallery-slider.css" />
+  </head>
+
+  <body>
+    <header id="title">
+      <!-- Nav Bar -->
+      <div class="sign-in-button">
+        <button id="sign-in-trigger" data-attr="modal">Sign In</button>
+      </div>
+      <a class="logo" href="index.html">
+        <img
+          class="logo-img"
+          alt="Twinkle Park logo"
+          src="assets/img/ferris-wheels.png"
+        />
+        <h1 class="logo-wording">Twinkle Park</h1>
+      </a>
+
+      <nav>
+        <ul class="active-ul">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- COVID19 UPDATES -->
+    <section id="covid19">
+      <div class="covid19-updates">
+        <!-- Add content for covid19 updates div here -->
+        <p>
+          Due to COVID 19, we have reduced the number of people allowed on the
+          rides at the same time. It is also mandatory to wear masks
+        </p>
+      </div>
+    </section>
+    <!-- IMAGE GALLERY SLIDER -->
+    <!-- The slider will use JavaScript to display theme park images in an interval -->
+    <section id="gallery">
+      <div class="gallery-nav arrow gallery-nav-prev">
+        <a href="#">
+          <i class="fas fa-chevron-circle-left"></i>
+        </a>
+      </div>
+      <div class="image-gallery">
+        <div class="gallery-item">
+          <img
+            src="assets/img/attraction-01.jpg"
+            alt="Speedy Roller"
+            class="gallery-img"
+          />
+
+          <!-- Using data-desc attribute to show or hide .gallery-desc if it does or does not contain description respectively -->
+          <p class="gallery-desc" data-desc="false">Speedy Roller</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="assets/img/attraction-02.jpg"
+            alt="Neon Swing"
+            class="gallery-img"
+          />
+
+          <!-- Using data-desc attribute to show or hide .gallery-desc if it does or does not contain description respectively -->
+          <p class="gallery-desc" data-desc="false">Neon Swing</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="assets/img/attraction-03.jpg"
+            alt="iWheel"
+            class="gallery-img"
+          />
+
+          <!-- Using data-desc attribute to show or hide .gallery-desc if it does or does not contain description respectively -->
+          <p class="gallery-desc" data-desc="false">iWheel</p>
+        </div>
+      </div>
+      <div class="gallery-nav arrow gallery-nav-next">
+        <a href="#">
+          <i class="fas fa-chevron-circle-right"></i>
+        </a>
+      </div>
+      <div class="gallery-nav icons">
+        <!-- Number of icons will be populated automatically by JavaScript depending on the number of gallery items that are in the .image-gallery -->
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT OF MAIN PAGE -->
+    <main id="main-content">
+      <div class="main-container">
+        <!-- About section. 50% width on large screens -->
+        <section class="about-park left">
+          <h2>About Twinkle Park</h2>
+
+          <p>
+            We are the one-stop place for fun over 20 attractions spread across
+            10 acres, Twinkle park provides the ultimate theme park experience
+            in 6 adventure zones — Water Park, Amusement Park, Extreme Park,
+            Show Park. Come experience them all by booking your tickets online.
+          </p>
+
+          <p>
+            Once you step in, you can spend the entire day here! Explore the
+            various dining options available at the theme park. If you need some
+            place to sleep, we are just next door to the Twinkle Star Resort
+            Hotel & Spa.
+          </p>
+
+          <p>
+            We also play host to some of the hottest acts and global events so
+            stay tuned for upcoming events and promotion by following Twinkle
+            Park on Facebook, Twitter and Instagram.
+          </p>
+          <img
+            src="assets/img/index.jpg"
+            alt="Amusement Park"
+            class="main-hero-pic"
+          />
+        </section>
+
+        <!-- News section. 50% width on large screens -->
+        <section class="latest-news mid">
+          <h2>Latest News</h2>
+
+          <div class="news">
+            <h4>Learn More About Our Enhanced Health and Safety Measures</h4>
+            <p>Find out what you need to know before you go.</p>
+            <br />
+            <p><u>Learn More</u></p>
+          </div>
+
+          <div class="sales">
+            <h4>Stay in the Atmosphere and Save Up to 25% on Select Stays</h4>
+            <p>
+              This special offer is valid on select rooms at a Twinkle park
+              partner for stays from July 5, 2021 to October 2, 2021. Book now
+              thru September 16, 2021.
+            </p>
+            <br />
+            <p><u>Learn More</u></p>
+          </div>
+        </section>
+
+        <!-- Address information. 100% width -->
+        <div class="right">
+          <section class="location">
+            <h2>Our Address</h2>
+            <div class="address-container">
+              <div class="address">
+                <span class="road">1001 Atha Drive</span>
+                <span class="city">Bakersfield</span>
+                <span class="zip">CA 93301</span>
+              </div>
+              <div class="phone">
+                <a href="tell:555-5555-555">555-5555-555</a>
+              </div>
+              <div class="email">
+                <a href="mailto:info@twinklepark.com">info@twinklepark.com</a>
+              </div>
+
+              <div class="map-container">
+                <div id="map"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Services provided. 100% width -->
+          <section class="services">
+            <h2>Services Provided</h2>
+            <p>
+              In the compound, you can find an ATM. We also have a first aid
+              office and a certified medical person in the park. Additionally,
+              there is a park with a qualified pet-sitter to keep your dogs
+              while you are having fun.
+            </p>
+          </section>
+
+          <section class="opening-hours">
+            <h2>Opening Hours</h2>
+            <ul>
+              <li><span>Monday:</span> 11:45AM – 1PM</li>
+              <li><span>Tuesday:</span> 11:45AM – 1PM</li>
+              <li><span>Wednesday:</span> 11:45AM – 1PM</li>
+              <li><span>Thursday:</span> 11:45AM – 1PM</li>
+              <li><span>Friday:</span> 11:45AM – 1PM</li>
+              <li><span>Saturday:</span> 11:45AM – 1PM</li>
+              <li><span class="red">Sunday:</span> Closed</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-row">
+        <!-- Newsletter sign up section -->
+        <section class="newsletter">
+          <h3>Signup for our newsletter</h3>
+          <div class="input-container">
+            <label for="newsletter-signup">Enter email</label>
+            <input
+              type="email"
+              id="newsletter-signup"
+              placeholder="Your Email Address"
+            />
+          </div>
+        </section>
+
+        <!-- Social media links for the park-->
+        <section class="social-links">
+          <h3>Follow us on social media</h3>
+          <ul class="social-links-container">
+            <li>
+              <a class="twitter-btn" href="https://twiter.com/twinklepark"title="Twitter" >
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="facebook-btn" href="https://facebook.com/twinklepark" title="Facebook" >
+              <i class="fab fa-facebook-square"></i> </a>
+            </li>
+            <li>
+              <a
+                class="instagram-btn"
+                href="https://instagram.com/twinklepark"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-row">
+        <!-- Copyright notice section. This will hold 100% width -->
+        <section class="copyright-notice">
+          <small class="copyright">
+            &copy; 2021 Twinkle Park. All rights reserved
+          </small>
+        </section>
+      </div>
+    </footer>
+
+    <!-- login modal. Triggered by javascript -->
+    <aside id="login-modal" class="modal-hidden" data-attr="modal">
+      <div class="sign-in-container">
+        <i class="fas fa-window-close"></i>
+        <h2>Already booked? Sign in</h2>
+        <form>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Sign In</button>
+        </form>
+        <a href="index.html"> Forgot Password? </a>
+      </div>
+    </aside>
+
+    <!-- gray background to be displayed when sign in modal is shown -->
+    <div id="modal-bg" class="modal-hidden" data-attr="modal"></div>
+
+    <!-- import fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a0b760c693.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- gallery slider script -->
+    <script src="assets/js/gallery-slider.js"></script>
+    <!-- sign in modal script -->
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/google-map.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9qf2SdqI-5Le5yaAik7OGwydSXAKsmY4&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
